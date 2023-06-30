@@ -34,18 +34,16 @@ public class Task1 implements Task {
 		Scanner myobj = new Scanner(System.in);
 		String input = myobj.nextLine();
 		System.out.println("TASK : 1 " + input);
+		
 
 	}
 
 	@Override
 	public String isValidUser() {
 		System.out.println(assignedUser);
-		 Optional user2 = Optional.ofNullable(assignedUser);
-		 System.out.println(user2);
-		 Optional<Users> user =repo.findByuserName(user2);
 		//Users user = repo.findByuserName("user1").orElseThrow(()->new ResourceNotFoundException("jjj"));
 		//System.out.println(user != null);
-	    return "user1";
+	    return "user2";
 	}
 
 	
